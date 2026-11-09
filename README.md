@@ -27,4 +27,4 @@ The two motor-control iterations are preserved separately:
 | --- | --- | --- |
 | Mechanical Engineering | Shuoqi Yang | Led CAD modeling, dimensional planning, material sourcing and purchasing, machining, fabrication, mechanical assembly, structural testing, and redesign of the dispensing path. |
 | Electrical Engineering and Automation | [Shaoxuan Xiong](https://github.com/yuxuan-518) | Developed the motor-control and automation systems, tested the NEMA17 configuration, and implemented the higher-torque replacement motor system. |
-| Chemistry and Food Preservation | Wenhao Jia | Researched moisture protection and food-preservation methods intended to keep the stored cat food dry and fresh. |
+| Chemistry and Food Preservation | [Wenhao Jia](https://github.com/jw3422951-ops) | Researched moisture protection and food-preservation methods intended to keep the stored cat food dry and fresh. |
