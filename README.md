@@ -8,7 +8,7 @@ Testing revealed recurring food jams and leakage near the hopper outlet. By obse
 
 The first automated version used a NEMA17 stepper motor. Although its control program operated correctly, physical testing showed that the motor did not provide enough torque to move the cat food reliably. The electrical engineering contributor therefore developed and tested a second control system for a higher-torque motor, allowing the dispensing mechanism to operate normally.
 
-The replacement motor weighs approximately 5 kg. Permanently mounting it to the feeder could shift the center of gravity and create a tipping risk, so it remains separate from the main frame. When connected, the motor, dispensing mechanism, and feeder structure function together as intended.
+The [higher-torque replacement motor](https://www.amazon.com/dp/B0FVX5SVB4?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1) weighs approximately 5 kg. Permanently mounting it to the feeder could shift the center of gravity and create a tipping risk, so it remains separate from the main frame. When connected, the motor, dispensing mechanism, and feeder structure function together as intended.
 
 [Watch the higher-torque motor rotation test](media/high_torque_motor_test.mp4)
 
@@ -26,5 +26,5 @@ The two motor-control iterations are preserved separately:
 | Area | Contributor | Contribution |
 | --- | --- | --- |
 | Mechanical Engineering | Shuoqi Yang | Led CAD modeling, dimensional planning, material sourcing and purchasing, machining, fabrication, mechanical assembly, structural testing, and redesign of the dispensing path. |
-| Electrical Engineering and Automation | EE teammate | Developed the motor-control and automation systems, tested the NEMA17 configuration, and implemented the higher-torque replacement motor system. |
-| Chemistry and Food Preservation | Chemistry teammate | Researched moisture protection and food-preservation methods intended to keep the stored cat food dry and fresh. |
+| Electrical Engineering and Automation | [Shaoxuan Xiong](https://github.com/yuxuan-518) | Developed the motor-control and automation systems, tested the NEMA17 configuration, and implemented the higher-torque replacement motor system. |
+| Chemistry and Food Preservation | Wenhao Jia | Researched moisture protection and food-preservation methods intended to keep the stored cat food dry and fresh. |
