@@ -8,8 +8,6 @@ Testing revealed recurring food jams and leakage near the hopper outlet. By obse
 
 The first automated version used a NEMA17 stepper motor. Although its control program operated correctly, physical testing showed that the motor did not provide enough torque to move the cat food reliably. The electrical engineering contributor therefore developed and tested a second control system for a higher-torque motor, allowing the dispensing mechanism to operate normally.
 
-![Higher-torque replacement motor used during testing](media/replacement_motor.jpg)
-
 The replacement motor weighs approximately 5 kg. Permanently mounting it to the feeder could shift the center of gravity and create a tipping risk, so it remains separate from the main frame. When connected, the motor, dispensing mechanism, and feeder structure function together as intended.
 
 [Watch the higher-torque motor rotation test](media/high_torque_motor_test.mp4)
