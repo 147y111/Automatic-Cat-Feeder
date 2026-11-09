@@ -84,8 +84,8 @@ The detailed chemistry contribution is intentionally left for Wenhao Jia to docu
 <table>
   <tr><th>Completed Feeder Prototype</th><th>Higher-Torque Motor Test</th></tr>
   <tr>
-    <td align="center"><video src="media/automatic_cat_feeder_demo.mp4" controls width="380"></video></td>
-    <td align="center"><video src="media/high_torque_motor_test.mp4" controls width="380"></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/3802f599-0b08-426b-a826-65936d58fb92" controls width="380"></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/d001d56f-1696-4ed1-9d0b-61fb5bd48209" controls width="380"></video></td>
   </tr>
 </table>
 
