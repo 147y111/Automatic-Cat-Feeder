@@ -16,18 +16,15 @@ I observed how the food accumulated and moved through the structure, then identi
 
 The revised structure improved the consistency of the flow. This iteration showed how friction, particle shape, alignment, surface condition, structural deflection, and manufacturing tolerances can cause a fabricated mechanism to behave differently from the CAD model.
 
-## Mechanical Development Sequence
+## Mechanical Operating Sequence
 
 ```mermaid
 flowchart LR
-    A[40-instance CAD assembly] --> B[Dimension planning and material sourcing]
-    B --> C[Machining, cutting, and assembly]
-    C --> D[Food-flow test]
-    D --> E[Jamming and leakage at hopper outlet]
-    E --> F[Observe accumulation and identify outlet geometry]
-    F --> G[Reduce outlet to 50 cm²]
-    G --> H[Reshape surrounding dispensing path]
-    H --> I[Smoother controlled release]
+    A[Food in storage container] --> B[Hopper]
+    B --> C[Revised 50 cm² outlet]
+    C --> D[Motor-driven dispensing mechanism]
+    D --> E[Guide path]
+    E --> F[Feeding tray]
 ```
 
 ## Mechanical Status and Limitations

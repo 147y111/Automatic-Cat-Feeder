@@ -6,12 +6,6 @@ This multidisciplinary Alba Studio project combines a modeled and fabricated fee
 
 The project developed through physical testing rather than ending with its first CAD model. The mechanical system was redesigned after food jammed and leaked around the hopper outlet. The electrical system also progressed through two motor configurations after the original NEMA17 setup proved unable to move the food reliably under load.
 
-## Project Demonstrations
-
-- [Watch the completed feeder prototype](media/automatic_cat_feeder_demo.mp4)
-- [Watch the higher-torque motor rotation test](media/high_torque_motor_test.mp4)
-- [Download the complete 40-instance STEP assembly](cad/automatic_cat_feeder_assembly.step)
-
 ## Design Evolution
 
 | Stage | Design or test | Observation | Resulting decision |
@@ -22,28 +16,19 @@ The project developed through physical testing rather than ending with its first
 | NEMA17 motor test | Register-level AVR C produced step and direction signals for the original motor configuration. | The controller operated, but the motor did not provide enough torque under the food load. | Develop a second system around a higher-torque motor. |
 | Higher-torque motor test | A Mega 2560 controlled a CL86Y-V20 driver with acceleration, deceleration, direction, and serial commands. | The dispensing mechanism could operate normally, but the motor weighed approximately 5 kg. | Keep the motor separate from the main frame to avoid shifting the center of gravity and increasing tipping risk. |
 
-## Development and Operating Flow
+## Operating Flow
 
 ```mermaid
 flowchart TD
-    A[Define storage and feeding requirements] --> B[Create 40-instance CAD assembly]
-    B --> C[Plan dimensions, source materials, fabricate, and assemble]
-    C --> D[Food moves from storage container to hopper]
-    D --> E[Food reaches the outlet]
-    E --> F{Food-flow test}
-    F -->|Jamming and leakage| G[Identify outlet geometry as the main problem]
-    G --> H[Reduce outlet area to 50 cm²]
-    H --> I[Adjust the surrounding dispensing path]
-    I --> J[Smoother controlled release into feeding tray]
-
-    C --> K[Test NEMA17 configuration]
-    K --> L{Enough torque under food load?}
-    L -->|No| M[Develop higher-torque motor controller]
-    M --> N[Test Mega 2560 and CL86Y-V20 system]
-    N --> O[Dispensing mechanism operates normally]
-    O --> P{Permanently mount the approximately 5 kg motor?}
-    P -->|No: tipping risk| Q[Keep motor separate and connect it during operation]
-    Q --> J
+    A[Dry cat food is stored in the upper container] --> B[Food enters the hopper]
+    B --> C[Food reaches the revised 50 cm² outlet]
+    D[Mega 2560 receives a start command] --> E[CL86Y-V20 driver sends controlled pulses to the motor]
+    E --> F[Motor rotates the dispensing mechanism]
+    C --> F
+    F --> G[The mechanism releases a controlled quantity of food]
+    G --> H[Food travels through the guide path]
+    H --> I[Food falls into the feeding tray]
+    I --> J[Motor stops after the dispensing cycle]
 ```
 
 ## Key Engineering Details
@@ -93,3 +78,15 @@ flowchart TD
 ### [Wenhao Jia](https://github.com/jw3422951-ops) — Chemistry and Food Preservation
 
 The detailed chemistry contribution is intentionally left for Wenhao Jia to document in his own Fork and submit through a Pull Request. This repository does not infer or pre-write experimental methods or results on his behalf.
+
+## Project Media
+
+<table>
+  <tr><th>Completed Feeder Prototype</th><th>Higher-Torque Motor Test</th></tr>
+  <tr>
+    <td align="center"><video src="media/automatic_cat_feeder_demo.mp4" controls width="380"></video></td>
+    <td align="center"><video src="media/high_torque_motor_test.mp4" controls width="380"></video></td>
+  </tr>
+</table>
+
+- [Download the complete 40-instance STEP assembly](cad/automatic_cat_feeder_assembly.step)
