@@ -21,6 +21,38 @@ The two motor-control iterations are preserved separately:
 
 [Watch the completed feeder prototype demonstration](media/automatic_cat_feeder_demo.mp4)
 
+## Development and Operating Flow
+
+```mermaid
+flowchart TD
+    A[Define storage and automatic feeding requirements] --> B[Create 40-instance CAD assembly]
+    B --> C[Plan dimensions and source materials]
+    C --> D[Machine, cut, and assemble the structure]
+
+    D --> E[Cat food enters the storage container]
+    E --> F[Food moves through the hopper]
+    F --> G[Food reaches the outlet]
+    G --> H[Dispensing mechanism controls the release]
+    H --> I[Food falls into the feeding tray]
+
+    G --> J{Physical testing}
+    J -->|Jamming and leakage observed| K[Identify outlet geometry as the main problem]
+    K --> L[Reduce outlet area to 50 cm²]
+    L --> M[Adjust the surrounding dispensing path]
+    M --> N[Smoother and more controlled food flow]
+    N --> H
+
+    D --> O[Test original NEMA17 motor]
+    O --> P{Enough torque under food load?}
+    P -->|No| Q[Develop control system for higher-torque motor]
+    Q --> R[Test motor with CL86Y-V20 driver]
+    R --> S[Dispensing mechanism operates normally]
+    S --> T{Mount the approximately 5 kg motor on the frame?}
+    T -->|No: tipping risk| U[Keep the motor separate from the main structure]
+    U --> V[Connect the motor to the mechanism during operation]
+    V --> H
+```
+
 ## Team Contributions
 
 | Area | Contributor | Contribution |
