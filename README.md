@@ -81,12 +81,12 @@ The detailed chemistry contribution is intentionally left for Wenhao Jia to docu
 
 ## Project Media
 
-<table>
-  <tr><th>Completed Feeder Prototype</th><th>Higher-Torque Motor Test</th></tr>
-  <tr>
-    <td align="center"><video src="https://github.com/user-attachments/assets/3802f599-0b08-426b-a826-65936d58fb92" controls width="380"></video></td>
-    <td align="center"><video src="https://github.com/user-attachments/assets/d001d56f-1696-4ed1-9d0b-61fb5bd48209" controls width="380"></video></td>
-  </tr>
-</table>
+### Completed Feeder Prototype
+
+<video src="https://github.com/user-attachments/assets/3802f599-0b08-426b-a826-65936d58fb92" controls width="620"></video>
+
+### Higher-Torque Motor Test
+
+<video src="https://github.com/user-attachments/assets/d001d56f-1696-4ed1-9d0b-61fb5bd48209" controls width="620"></video>
 
 - [Download the complete 40-instance STEP assembly](cad/automatic_cat_feeder_assembly.step)
